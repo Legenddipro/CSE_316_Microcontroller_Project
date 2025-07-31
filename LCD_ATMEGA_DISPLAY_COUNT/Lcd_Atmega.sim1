@@ -1,0 +1,53 @@
+<circuit version="1.1.0-SR1" rev="2005" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="MCU" CircId="mega32-1" mainComp="false" Show_id="true" Show_Val="false" Pos="-80,-40" rotation="0" hflip="1" vflip="1" label="mega32-1" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Frequency="1 MHz" Program="C:/Users/dipro/Documents/Atmel Studio/7.0/GccApplication5/GccApplication5/Debug/GccApplication5.hex" Auto_Load="false" saveEepr="true" Logic_Symbol="false" Wdt_enabled="false" MainMcu="true" SerialMon="-1" />
+
+<item itemtype="Hd44780" CircId="Hd44780-3" mainComp="false" Show_id="true" Show_Val="false" Pos="24,-12" rotation="0" hflip="1" vflip="1" label="Hd44780-3" idLabPos="70,-82" labelrot="0" valLabPos="-16,20" valLabRot="0" Rows="2" Cols="16" />
+
+<item itemtype="Rail" CircId="Rail-7" mainComp="false" ShowProp="Voltage" Show_id="false" Show_Val="true" Pos="-164,12" rotation="90" hflip="1" vflip="1" label="Rail-7" idLabPos="-5,-10" labelrot="-90" valLabPos="-17.8553,1.7061" valLabRot="-90" Voltage="5 V" />
+
+<item itemtype="Ground" CircId="Ground-11" mainComp="false" Show_id="false" Show_Val="false" Pos="56,160" rotation="0" hflip="1" vflip="1" label="Ground-11" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Ground" CircId="Ground-14" mainComp="false" Show_id="false" Show_Val="false" Pos="-112,72" rotation="0" hflip="1" vflip="1" label="Ground-14" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Switch" CircId="Switch-19" mainComp="false" Show_id="false" Show_Val="false" Pos="-136,-36" rotation="0" hflip="1" vflip="1" label="Switch-19" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" DT="false" Poles="1" />
+
+<item itemtype="Led" CircId="Led-26" mainComp="false" Show_id="false" Show_Val="false" Pos="-8,-80" rotation="270" hflip="1" vflip="1" label="Led-26" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Yellow" Grounded="true" Threshold="2.4 V" MaxCurrent="30 mA" Resistance="0.6 Ω" />
+
+<item itemtype="Node" CircId="Node-8" mainComp="false" Pos="-164,28" />
+
+<item itemtype="Node" CircId="Node-20" mainComp="false" Pos="-152,28" />
+
+<item itemtype="Node" CircId="Node-29" mainComp="false" Pos="-120,-24" />
+
+<item itemtype="Connector" uid="Connector-4" startpinid="Rail-7-outnod" endpinid="Node-8-0" pointList="-164,28,-164,28" />
+
+<item itemtype="Connector" uid="Connector-5" startpinid="Node-8-2" endpinid="Rail-7-outnod" pointList="-164,28,-164,28" />
+
+<item itemtype="Connector" uid="Connector-10" startpinid="mega32-1-PORTC6" endpinid="Hd44780-3-PinRS" pointList="-24,64,40,64,40,-4" />
+
+<item itemtype="Connector" uid="Connector-11" startpinid="Hd44780-3-PinRW" endpinid="Ground-11-Gnd" pointList="48,-4,48,144,56,144" />
+
+<item itemtype="Connector" uid="Connector-12" startpinid="mega32-1-PORTC7" endpinid="Hd44780-3-PinEn" pointList="-24,56,56,56,56,-4" />
+
+<item itemtype="Connector" uid="Connector-14" startpinid="mega32-1-PORTD4" endpinid="Hd44780-3-dataPin4" pointList="-88,104,-148,104,-148,168,96,168,96,-4" />
+
+<item itemtype="Connector" uid="Connector-15" startpinid="mega32-1-PORTD5" endpinid="Hd44780-3-dataPin5" pointList="-88,112,-172,112,-172,184,104,184,104,-4" />
+
+<item itemtype="Connector" uid="Connector-16" startpinid="mega32-1-PORTD6" endpinid="Hd44780-3-dataPin6" pointList="-88,120,-116,120,-116,132,112,132,112,-4" />
+
+<item itemtype="Connector" uid="Connector-17" startpinid="mega32-1-PORTD7" endpinid="Hd44780-3-dataPin7" pointList="-24,120,120,120,120,-4" />
+
+<item itemtype="Connector" uid="Connector-44" startpinid="Switch-19-pinP0" endpinid="Node-20-1" pointList="-152,-36,-152,28" />
+
+<item itemtype="Connector" uid="Connector-45" startpinid="Node-8-1" endpinid="Node-20-0" pointList="-164,28,-152,28" />
+
+<item itemtype="Connector" uid="Connector-46" startpinid="Node-20-2" endpinid="mega32-1-RST" pointList="-152,28,-88,28,-88,32" />
+
+<item itemtype="Connector" uid="Connector-68" startpinid="mega32-1-PORTA0" endpinid="Led-26-lPin" pointList="-24,-32,-8,-32,-8,-64" />
+
+<item itemtype="Connector" uid="Connector-78" startpinid="Switch-19-switch0pinN" endpinid="Node-29-0" pointList="-120,-36,-120,-24" />
+
+<item itemtype="Connector" uid="Connector-82" startpinid="Node-29-2" endpinid="Node-29-1" pointList="-120,-24,-120,-24" />
+
+</circuit>
