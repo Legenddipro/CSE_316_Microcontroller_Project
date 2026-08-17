@@ -1,4 +1,6 @@
 # CSE_316_Microcontroller_Project
+## Youtube Video Link : 
+https://www.youtube.com/watch?v=m5hoWBVnn08&list=PLF5O9U7Em7xZEr9DeVMrCWJeGa70I9FSs&index=2&t=117s
 ## Functionalities
 - **Object Detection**: The system can detect objects of 3 types such as apple, orange and banana
 - **Object Classification**: The system can classify the detected objects into their respective categories and sort them into their dedicated bins
